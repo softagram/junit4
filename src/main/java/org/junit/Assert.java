@@ -38,7 +38,7 @@ public class Assert {
      * okay)
      * @param expected the sequence to check against
      * @param actual the sequence that is being checked
-     *  (Commented for PR test)
+     */
     public static void assertContentsEqual(String message, CharSequence expected,
             CharSequence actual) {
         if (expected.length() != actual.length()) {
