@@ -9,7 +9,7 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertNull;
 import static org.junit.Assert.assertSame;
-//import static org.junit.Assert.assertThat; (Removed for PR test)
+import static org.junit.Assert.assertThat;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.fail;
@@ -985,7 +985,7 @@ public class AssertionTest {
         }
         throw new AssertionError(ASSERTION_ERROR_EXPECTED);
     }
-
+/* Commenting out due PR test
     @Test
     public void assertThrowsUsesCanonicalNameWhenRequiredExceptionNotThrown() {
         try {
@@ -1017,4 +1017,5 @@ public class AssertionTest {
             }
         };
     }
+    */
 }
