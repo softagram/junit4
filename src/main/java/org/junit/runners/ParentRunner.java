@@ -50,6 +50,8 @@ import org.junit.runners.model.TestClass;
 import org.junit.validator.AnnotationsValidator;
 import org.junit.validator.TestClassValidator;
 
+import org.junit.Test; //try the rules
+
 /**
  * Provides most of the functionality specific to a Runner that implements a
  * "parent node" in the test tree, with children defined by objects of some data
