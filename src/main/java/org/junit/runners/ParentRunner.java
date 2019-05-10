@@ -7,6 +7,7 @@ import static org.junit.internal.runners.rules.RuleMemberValidator.CLASS_RULE_VA
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
