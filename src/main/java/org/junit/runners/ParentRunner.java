@@ -49,8 +49,7 @@ import org.junit.runners.model.Statement;
 import org.junit.runners.model.TestClass;
 import org.junit.validator.AnnotationsValidator;
 import org.junit.validator.TestClassValidator;
-
-//import org.junit.tests.running.classes.ThreadsTest; // just to try the rules
+import org.junit.tests.running.classes.ThreadsTest; // just to try the rules
 
 /**
  * Provides most of the functionality specific to a Runner that implements a
