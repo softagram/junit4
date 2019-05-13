@@ -8,15 +8,22 @@ import org.junit.runner.JUnitCore;
 import org.junit.runner.Request;
 import org.junit.runner.Result;
 import org.junit.runner.RunWith;
-import org.junit.runner.Runner;
 import org.junit.runner.notification.RunListener;
 import org.junit.runners.BlockJUnit4ClassRunner;
+import org.junit.runner.Runner;
 import org.junit.runners.model.InitializationError;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import static java.util.Arrays.asList;
+import static java.util.Collections.singletonList;
 import static org.junit.Assert.assertEquals;
 
 public class ThreadsTest {
-    private String log = "";
+
+    private List<Boolean> interruptedFlags = new ArrayList<Boolean>();
+    private JUnitCore core = new JUnitCore();
 
     public static class TestWithInterrupt {
 

@@ -7,7 +7,6 @@ import static org.junit.internal.runners.rules.RuleMemberValidator.CLASS_RULE_VA
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.Iterator;
@@ -552,16 +551,13 @@ public abstract class ParentRunner<T> extends Runner implements Filterable,
     private static class ClassRuleCollector implements MemberValueConsumer<TestRule> {
         final List<RuleContainer.RuleEntry> entries = new ArrayList<RuleContainer.RuleEntry>();
 
-        public void accept(FrameworkMember member, TestRule value) {
+        public void accept(FrameworkMember<?> member, TestRule value) {
             ClassRule rule = member.getAnnotation(ClassRule.class);
             entries.add(new RuleContainer.RuleEntry(value, RuleContainer.RuleEntry.TYPE_TEST_RULE,
                     rule != null ? rule.order() : null));
         }
 
         public List<TestRule> getOrderedRules() {
-            if (entries.isEmpty()) {
-                return Collections.emptyList();
-            }
             Collections.sort(entries, RuleContainer.ENTRY_COMPARATOR);
             List<TestRule> result = new ArrayList<TestRule>(entries.size());
             for (RuleContainer.RuleEntry entry : entries) {
