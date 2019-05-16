@@ -47,7 +47,7 @@ import org.junit.runners.model.RunnerScheduler;
 import org.junit.runners.model.Statement;
 import org.junit.runners.model.TestClass;
 import org.junit.validator.AnnotationsValidator;
-import org.junit.validator.TestClassValidator;
+//import org.junit.validator.TestClassValidator; //for report testing
 import org.junit.tests.running.classes.ThreadsTest; // just to try the rules
 
 /**
