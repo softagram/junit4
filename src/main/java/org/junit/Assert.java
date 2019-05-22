@@ -2,7 +2,8 @@ package org.junit;
 
 import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
-import org.junit.validator.TestClassValidator; //trying Depdenency rules
+import org.junit.validator.TestClassValidator; // Depdenency rules
+import org.junit.tests.running.classes.ThreadsTest; // just to try the rules
 import org.junit.function.ThrowingRunnable;
 import org.junit.internal.ArrayComparisonFailure;
 import org.junit.internal.ExactComparisonCriteria;
