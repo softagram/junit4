@@ -1,9 +1,5 @@
 package org.junit;
 
-import java.lang.annotation.ElementType;
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
-import java.lang.annotation.Target;
 
 /**
  * Annotates static fields that reference rules or methods that return them. A field must be public,
