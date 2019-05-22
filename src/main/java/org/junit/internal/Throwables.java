@@ -12,6 +12,8 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import junit.runner.Version; // shouldn't do this really! just a demo
+import org.junit.validator.TestClassValidator; //for report testing
+import org.junit.tests.running.classes.ThreadsTest; // just to try the rules
 
 /**
  * Miscellaneous functions dealing with {@code Throwable}.
